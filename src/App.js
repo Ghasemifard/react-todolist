@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import TodoApp from './components/TodoApp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>TodoList App</h1>
+      <TodoApp/>
     </div>
   );
 }
-
 export default App;
+
+
+// components:
+// 1. TodoApp: todos 
+// 2. TodoForm => form + button: add todo
+// 3. TodoList : todos.map(...)=>
